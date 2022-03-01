@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/c1H0iXGR7h"
+  },
+  "develop": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/k8Y0tqREx5"
+  },
+  "stage": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/d7M0kJCn2N"
+  },
+  "staging": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/f2U7mInQ8Q"
+  },
+  "devops": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/vjabzdNj7s"
+  },
+  "staged": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/root1/.amplify/awscloudformation/Bv8EiVDZ2a"
+  },
+  "stagged": {
+    "configLevel": "project",
+    "useProfile": false,
+    "awsConfigFilePath": "/home/user/.amplify/awscloudformation/jzYNBttxE2"
+  }
+}

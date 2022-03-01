@@ -1,0 +1,37 @@
+export interface TickersDataYF {
+  ticker_symbol: string;
+  f_score: Number;
+  free_cash_flow_yield: Number;
+  price_to_book: Number;
+  increase_in_price_over_six_months: Number;
+  return_on_invested_capital: Number;
+  earning_yield: Number;
+  change_in_retained_earnings: Number;
+  market_cap: Number;
+  cash_on_hand: Number;
+  date: Date;
+  debt2equity: Number;
+  peg_ratio: Number;
+  price2earning: Number;
+  return_on_equity: Number;
+  dividend_yield: Number;
+  beta: Number;
+  payout_ratio: Number;
+  price2sales: Number;
+  bottom_line: Number;
+  free_cash_flow: Number;
+  eps_growth_6_month: Number;
+  eps_growth_1_year: Number;
+  eps_growth_2_year: Number;
+  five_years_data: string;
+  all_data: string;
+  net_operating_assets: Number;
+  change_in_debt: Number;
+  ebitda_to_ev: Number;
+  shareholder_yield: Number;
+  eps_growth_3_year: Number;
+  roe_growth_3_year: Number;
+  sales_growth_3_year: Number;
+  price_to_cash_flow: Number;
+  free_cash_flow_to_equity: Number;
+}

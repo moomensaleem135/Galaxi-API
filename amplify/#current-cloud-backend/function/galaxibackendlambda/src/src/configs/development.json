@@ -1,0 +1,14 @@
+{
+    "env": "development",
+    "dbConfig": {
+        "host": "glaxi-db.c94lzvvy8wrc.us-east-1.rds.amazonaws.com",
+        "user": "postgres",
+        "password": "Webdir123R",
+        "database": "Galaxi-DataBase",
+        "pool": {
+            "min": 0,
+            "max": 5
+        }
+    },
+    "secretKey": "secretKey"
+}

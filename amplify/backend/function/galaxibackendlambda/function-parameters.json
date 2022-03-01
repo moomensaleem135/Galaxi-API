@@ -1,0 +1,49 @@
+{
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "cookieKey1",
+      "environmentVariableName": "COOKIE_KEY_1"
+    },
+    {
+      "cloudFormationParameterName": "cookieKey2",
+      "environmentVariableName": "COOKIE_KEY_2"
+    },
+    {
+      "cloudFormationParameterName": "server",
+      "environmentVariableName": "SERVER"
+    },
+    {
+      "cloudFormationParameterName": "port",
+      "environmentVariableName": "PORT"
+    },
+    {
+      "cloudFormationParameterName": "chekoutSecretKey",
+      "environmentVariableName": "CHEKOUT_SECRET_KEY"
+    },
+    {
+      "cloudFormationParameterName": "region",
+      "environmentVariableName": "region"
+    },
+    {
+      "cloudFormationParameterName": "accessKeyId",
+      "environmentVariableName": "accessKeyId"
+    },
+    {
+      "cloudFormationParameterName": "secretAccessKey",
+      "environmentVariableName": "secretAccessKey"
+    },
+    {
+      "cloudFormationParameterName": "stripeSecretKey",
+      "environmentVariableName": "STRIPE_SECRET_KEY"
+    },
+    {
+      "cloudFormationParameterName": "cookieKey1",
+      "environmentVariableName": "COOKIE_KEY_1"
+    },
+    {
+      "cloudFormationParameterName": "cookieKey2",
+      "environmentVariableName": "COOKIE_KEY_2"
+    }
+  ]
+}

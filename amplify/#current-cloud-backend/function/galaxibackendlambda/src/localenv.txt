@@ -1,0 +1,89 @@
+NODE_ENV=development
+PORT=4001
+GOOGLE_CLIENT_ID=984919890336-jp3hhutn5mebraeiabnc2hsgih92080m.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=TooGtVwUxaiJKdXSQW6-HhOD
+SERVER=localhost
+COOKIE_KEY_1=GalaxiCookieKey1HhODGalaxiCookieKey1
+COOKIE_KEY_2=GalaxiCookieKey2HhODhsgih9208
+CHEKOUT_SECRET_KEY=sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed
+STRIPE_SECRET_KEY=sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw
+region=us-east-1
+accessKeyId=AKIAVHCYF6IUJTANOPPM
+secretAccessKey=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
+
+// app ts file
+this.app.use(cookieSession({
+      // milliseconds of a day
+      maxAge: 24*60*60*1000,
+      keys: [this.cookeKey1, this.cookeKey2]
+    }));
+    this.app.use(cookieParser('secretcode'));
+    this.app.use(passport.initialize());
+    this.app.use(passport.session());
+passport.serializeUser((user: any, done: any) => {
+      const { googleId } = user.dataValues;
+      return done(null, googleId);
+    });
+
+    passport.deserializeUser(async (googleId: any, done: any) => {
+      const authService = new AuthService();
+      const existedUser = await authService.findByGoogleId(googleId);
+      return done(null, existedUser);
+    });
+
+    passport.use(
+      new Strategy(
+        {
+          clientID: process.env.GOOGLE_CLIENT_ID,
+          clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+          callbackURL: this.callBackUrl,
+        },
+        async function (accessToken: any, refreshToken: any, profile: Profile, cb: any) {
+          const authService = new AuthService();
+          const existedUser = await authService.findByGoogleId(profile.id);
+          const ibkrServer = DB.IbkrServerModel;
+
+          const res = await ibkrServer.findOne({
+            where: {
+              enabled: true,
+              currently_used: true,
+            },
+          });
+          console.log('Res', res.id);
+
+          if (existedUser) {
+            console.log('==================== existedUser ====================');
+            console.log(existedUser.email, ' ', existedUser.googleId);
+            console.log('==================== existedUser ====================');
+
+            cb(null, existedUser);
+          } else {
+            const googleSignInUserData = await authService.googleSignIn({
+              email: profile.emails[0].value,
+              googleId: profile.id,
+              displayName: profile.displayName,
+              familyName: profile.name.familyName,
+              givenName: profile.name.givenName,
+              imageUrl: profile.imageUrl[0].value,
+              provider: profile.provider,
+              ibkrServerId: res.id,
+            });
+            console.log('==================== googleSignInUserData ====================');
+            console.log(googleSignInUserData.email, ' ', googleSignInUserData.googleId);
+            console.log('==================== googleSignInUserData ====================');
+            cb(null, googleSignInUserData);
+          }
+        },
+      ),
+    );
+
+
+    // auth router findByGoogleId
+
+    this.router.get(`${this.path}google`, (req, res) => {
+      passport.authenticate('google', { scope: ['profile', 'email'] })(req, res);
+    });
+
+    this.router.get(`${this.path}google/callback`, passport.authenticate('google', { failureRedirect: '/login' }), (req, res) => {
+      res.redirect(this.redirectUrl);
+    });

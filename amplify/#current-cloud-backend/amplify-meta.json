@@ -1,0 +1,69 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-stagged-151345-authRole",
+      "UnauthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-stagged-151345-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-stagged-151345-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-stagged-151345-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-stagged-151345-unauthRole",
+      "StackName": "amplify-galaxibackendserver-stagged-151345",
+      "StackId": "arn:aws:cloudformation:us-east-1:358814708264:stack/amplify-galaxibackendserver-stagged-151345/24a13650-93c8-11ec-b46a-12d7ee6fd85b",
+      "AmplifyAppId": "d1xit5yyf429mo"
+    }
+  },
+  "function": {
+    "galaxibackendlambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "lastBuildTimeStamp": "2022-02-28T09:15:22.225Z",
+      "lastBuildType": "PROD",
+      "lastPackageTimeStamp": "2022-02-28T09:16:17.695Z",
+      "distZipFilename": "galaxibackendlambda-4b65574f6a4c634b7554-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-galaxibackendserver-stagged-151345-deployment",
+        "s3Key": "amplify-builds/galaxibackendlambda-4b65574f6a4c634b7554-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-galaxibackendserver-stagged-151345-deployment/amplify-cfn-templates/function/galaxibackendlambda-cloudformation-template.json",
+        "logicalId": "functiongalaxibackendlambda"
+      },
+      "lastPushTimeStamp": "2022-02-28T09:18:03.813Z",
+      "output": {
+        "Region": "us-east-1",
+        "Arn": "arn:aws:lambda:us-east-1:358814708264:function:galaxibackendlambda-stagged",
+        "Name": "galaxibackendlambda-stagged",
+        "LambdaExecutionRole": "galaxibackendserverLambdaRoled65d635d-stagged"
+      },
+      "lastPushDirHash": "EzXjiWm87N6HPtQzEBDBd48nnWA="
+    }
+  },
+  "api": {
+    "galaxibackendapi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "galaxibackendlambda",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-galaxibackendserver-stagged-151345-deployment/amplify-cfn-templates/api/galaxibackendapi-cloudformation-template.json",
+        "logicalId": "apigalaxibackendapi"
+      },
+      "lastPushTimeStamp": "2022-02-28T09:18:03.776Z",
+      "output": {
+        "ApiName": "galaxibackendapi",
+        "RootUrl": "https://09e7iww4ne.execute-api.us-east-1.amazonaws.com/stagged",
+        "ApiId": "09e7iww4ne"
+      },
+      "lastPushDirHash": "EXgs7U5Sar+H+w7PgeiCYoyVo7g="
+    }
+  }
+}

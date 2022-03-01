@@ -1,0 +1,153 @@
+{
+  "develop": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-develop-104442-authRole",
+      "UnauthRoleArn": "arn:aws:iam::119610914560:role/amplify-galaxibackendserver-develop-104442-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::119610914560:role/amplify-galaxibackendserver-develop-104442-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-develop-104442-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-develop-104442-unauthRole",
+      "StackName": "amplify-galaxibackendserver-develop-104442",
+      "StackId": "arn:aws:cloudformation:us-east-1:119610914560:stack/amplify-galaxibackendserver-develop-104442/138ed990-f99e-11eb-97bf-0a8267cebc39",
+      "AmplifyAppId": "d121opxy2df7v"
+    },
+    "categories": {
+      "function": {
+        "galaxibackendlambda": {
+          "deploymentBucketName": "amplify-galaxibackendserver-develop-104442-deployment",
+          "s3Key": "amplify-builds/galaxibackendlambda-3972696f647879457a5a-build.zip",
+          "googleClientId": "984919890336-jp3hhutn5mebraeiabnc2hsgih92080m.apps.googleusercontent.com",
+          "googleClientSecret": "TooGtVwUxaiJKdXSQW6-HhOD",
+          "server": "DOMAIN",
+          "nodeEnv": "development",
+          "port": "4000",
+          "chekoutSecretKey": "sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed",
+          "region": "us-east-1",
+          "accessKeyId": "AKIARXWK5W4ANK42EQUS",
+          "secretAccessKey": "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",
+          "stripeSecretKey": "sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw"
+        }
+      }
+    }
+  },
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-staging-184709-authRole",
+      "UnauthRoleArn": "arn:aws:iam::657141637168:role/amplify-galaxibackendserver-staging-184709-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::657141637168:role/amplify-galaxibackendserver-staging-184709-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-staging-184709-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-staging-184709-unauthRole",
+      "StackName": "amplify-galaxibackendserver-staging-184709",
+      "StackId": "arn:aws:cloudformation:us-east-1:657141637168:stack/amplify-galaxibackendserver-staging-184709/bed81d80-2a99-11ec-ab62-0207ba3219c2",
+      "AmplifyAppId": "d3czg0omrr9ano"
+    },
+    "categories": {
+      "function": {
+        "galaxibackendlambda": {
+          "deploymentBucketName": "amplify-galaxibackendserver-staging-184709-deployment",
+          "s3Key": "amplify-builds/galaxibackendlambda-72746f7933457171565a-build.zip",
+          "server": "DOMAIN",
+          "port": "4000",
+          "chekoutSecretKey": "sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed",
+          "region": "us-east-1",
+          "accessKeyId": "AKIAVHCYF6IUJTANOPPM",
+          "secretAccessKey": "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",
+          "stripeSecretKey": "sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw",
+          "cookieKey1": "abcdef",
+          "cookieKey2": "cdef"
+        }
+      }
+    }
+  },
+  "devops": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-devops-103149-authRole",
+      "UnauthRoleArn": "arn:aws:iam::657141637168:role/amplify-galaxibackendserver-devops-103149-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::657141637168:role/amplify-galaxibackendserver-devops-103149-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-devops-103149-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-devops-103149-unauthRole",
+      "StackName": "amplify-galaxibackendserver-devops-103149",
+      "StackId": "arn:aws:cloudformation:us-east-1:657141637168:stack/amplify-galaxibackendserver-devops-103149/35d9d4d0-3230-11ec-962a-0a1865d16659",
+      "AmplifyAppId": "d1pjfn4wukcmjg"
+    },
+    "categories": {
+      "function": {
+        "galaxibackendlambda": {
+          "deploymentBucketName": "amplify-galaxibackendserver-devops-103149-deployment",
+          "s3Key": "amplify-builds/galaxibackendlambda-4f6e44706a5842353661-build.zip",
+          "server": "DOMAIN",
+          "port": "4000",
+          "chekoutSecretKey": "sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed",
+          "region": "us-east-1",
+          "accessKeyId": "AKIAVHCYF6IUJTANOPPM",
+          "secretAccessKey": "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",
+          "stripeSecretKey": "sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw",
+          "cookieKey1": "abcdef",
+          "cookieKey2": "cdef"
+        }
+      }
+    }
+  },
+  "staged": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-staged-52018-authRole",
+      "UnauthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-staged-52018-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-staged-52018-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-staged-52018-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-staged-52018-unauthRole",
+      "StackName": "amplify-galaxibackendserver-staged-52018",
+      "StackId": "arn:aws:cloudformation:us-east-1:358814708264:stack/amplify-galaxibackendserver-staged-52018/c6b53210-543b-11ec-95fc-12d15228996b",
+      "AmplifyAppId": "d1xit5yyf429mo"
+    },
+    "categories": {
+      "function": {
+        "galaxibackendlambda": {
+          "deploymentBucketName": "amplify-galaxibackendserver-staged-52018-deployment",
+          "s3Key": "amplify-builds/galaxibackendlambda-6d47377a6d6e386b5948-build.zip",
+          "server": "DOMAIN",
+          "port": "4000",
+          "chekoutSecretKey": "sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed",
+          "region": "us-east-1",
+          "accessKeyId": "AKIAVHCYF6IUJTANOPPM",
+          "secretAccessKey": "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",
+          "stripeSecretKey": "sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw",
+          "cookieKey1": "abcdef",
+          "cookieKey2": "cdef"
+        }
+      }
+    }
+  },
+  "stagged": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-galaxibackendserver-stagged-151345-authRole",
+      "UnauthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-stagged-151345-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::358814708264:role/amplify-galaxibackendserver-stagged-151345-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-galaxibackendserver-stagged-151345-deployment",
+      "UnauthRoleName": "amplify-galaxibackendserver-stagged-151345-unauthRole",
+      "StackName": "amplify-galaxibackendserver-stagged-151345",
+      "StackId": "arn:aws:cloudformation:us-east-1:358814708264:stack/amplify-galaxibackendserver-stagged-151345/24a13650-93c8-11ec-b46a-12d7ee6fd85b",
+      "AmplifyAppId": "d1xit5yyf429mo"
+    },
+    "categories": {
+      "function": {
+        "galaxibackendlambda": {
+          "deploymentBucketName": "amplify-galaxibackendserver-stagged-151345-deployment",
+          "s3Key": "amplify-builds/galaxibackendlambda-4b65574f6a4c634b7554-build.zip",
+          "server": "DOMAIN",
+          "port": "4000",
+          "chekoutSecretKey": "sk_test_bf7a2db1-377e-47c1-a3b4-d3b5f7a429ed",
+          "region": "us-east-1",
+          "accessKeyId": "AKIAVHCYF6IUJTANOPPM",
+          "secretAccessKey": "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",
+          "stripeSecretKey": "sk_test_51JDoOKAWwdvHSE1pELokbBnEYEgmG0tZBA70KdRDBznVQN5p7wwQvIWrNnLQXLNY5CoiLqbmqsmOThvETBagDnLz00sI4eFGSw",
+          "cookieKey1": "abcdef",
+          "cookieKey2": "cdef"
+        }
+      }
+    }
+  }
+}
